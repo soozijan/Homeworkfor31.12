@@ -1,0 +1,30 @@
+Scanner scanner = new Scanner(System.in);
+Random r = new Random();
+
+ //Targil 1:
+        System.out.println("Please Enter arry size: ");
+        int size = scanner.nextInt();
+        int[] arr_size = new int[size];
+        for (int index = 0; index < arr_size.length; index++) {
+            arr_size[index] = r.nextInt(1000);
+        }
+        int sum = 0;
+        for (int index = 0; index < arr_size.length; index++) {
+            sum = sum + arr_size[index];
+        }
+        double avg = sum / arr_size.length;
+        System.out.println(String.format("The avg is : %f", avg));
+
+
+        //Targil 2:
+        String[] words = new String[5];
+        for (int index = 0; index < words.length; index++)
+        {
+            System.out.println("Please Enter a word: ");
+            words[index] = scanner.next();
+        }
+        for (int index = 0; index < words.length; index++)
+        {
+            System.out.println(words[index]);
+        }
+
